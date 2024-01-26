@@ -1,0 +1,25 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.kevindai.pys.PYA</id>
+
+    <name>PYA</name>
+
+    <vendor email="kevindaigood@gmail" url="https://www.yourcompany.com">KevinDai</vendor>
+
+    <description>This plugin is used for protecting your ass</description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+
+        <notificationGroup id="protect-your-ass" displayType="BALLOON"/>
+    </extensions>
+
+    <applicationListeners>
+    </applicationListeners>
+    <application-components>
+        <component>
+            <implementation-class>com.kevindai.pys.pya.MyPluginApplicationComponent</implementation-class>
+        </component>
+    </application-components>
+</idea-plugin>
